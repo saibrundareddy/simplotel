@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0px;
+        }
+        .con{
+            margin: 50px;
+            display: flex;
+            
+            flex-direction: column;
+            width: 100%;
+            
+        }
+        .bg-container {
+            background: linear-gradient(to right, #ffeb99, #ffb3b3);
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        @media screen and (min-width: 768px) {
+            .bg-container {
+                flex-direction: row;
+            }
+            .con{
+            margin: 50px;
+            width: 50%;
+            
+        }
+        }
+
+        .heading {
+
+            color: black;
+            margin-top: 50px;
+
+            font-family: "Calibri";
+            letter-spacing: 3px; 
+            font-size: 30px;
+        }
+
+        @media screen and (min-width: 768px) {
+
+            .heading {
+
+                font-size: 50px;
+            }
+        }
+
+        .description {
+
+            color: black;
+            max-width: 80%;
+            font-family: "Calibri";
+            font-size: 15px;
+            margin-bottom: 50px;
+        }
+
+        @media screen and (min-width: 768px) {
+
+            .description {
+
+                font-size: 20px;
+            }
+        }
+
+        .button {
+
+            background-color: #ff8080;
+
+            color: #ffffff;
+
+            font-family: "Calibri";
+
+            font-size: 18px;
+
+            border: none;
+
+            padding-top: 12px;
+
+            padding-bottom: 12px;
+
+            padding-left: 32px;
+
+            padding-right: 32px;
+            width: 22vh;
+        }
+
+        .image {
+
+            width: 100%;
+
+        }
+
+        @media screen and (min-width: 768px) {
+
+            .image {
+                width: 100%;
+                
+                height: 100vh;
+            }
+        }
+        .image1,.image2{
+            width: 200px;
+            height: 245px;
+            margin-bottom: 10px;
+            margin-left: 20px;
+        }
+        .image3{
+            width: 320px;
+            height: 500px;
+            margin-bottom: 10px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .bg-container1 {
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background: linear-gradient(to right, #ffeb99, #ffb3b3);
+background-size: cover;
+padding: 30px;
+}
+.image-container{
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+    .bg-container1{
+        flex-direction: row;
+    }
+}
+.card-container{
+    background-color: #ff8080;
+    height: 45vh;
+    width: 55vh;
+    padding: 15px;
+}
+.click-container{
+    display: flex;
+    flex-direction: row;
+}
+.para-head{
+    font-size: 16px;
+    font-family: "calibri";
+    font-weight: 600;
+}
+.head-title{
+    font-family: "Calibri";
+    letter-spacing: 3px; 
+    font-weight: bold;
+    font-size: 42px;
+}
+.arrow{
+    background-color: #ff8080;
+    border-width: 0px;
+    margin-left: 5px;
+}
+.iconimage{
+    width: 25px;
+}
+.menu{
+    width: 30px;
+}
+nav{
+    background-color: #ff8080;
+    font-family: "georgia";
+    height: 75px;
+    width: 100%;
+    padding: 10px;
+}
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+li{
+    list-style: none;
+    display: inline;
+}
+li a{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+@media screen and (max-width: 768px){
+    li a{
+        font-size: 12px;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <div id="homepage">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Order</a></li>
+                <li><a href="#">Food</a></li>
+                <li><a href="#">Restaurant</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href ="#"><img src="images/menu-bar.png" class="menu"/> </a> </li>
+            </ul>
+        </nav>
+        <div class="bg-container">
+            <div class="con">
+    
+                <h1 class="heading">LOREM IPSUM</h1>
+
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id est vitae dolor rhoncus tristique.
+                    Maecenas metus quam,
+                    rhoncus euismod lorem in, sollicitudin viverra eros. Donec dictum luctus quam ut tristique. Curabitur nec
+                    faucibus purus.Quisque congue sem nec justo mollis, in tincidunt erat pretium.
+                    Sed pulvinar, massa ac porta viverra.
+                </p>
+
+                <button class="button">Click Me</button>
+
+            </div>
+            <div>
+                <img src="images/pexels-robin-stickel-70497.jpg" alt="MY Image" class="image"/>
+            </div>
+        </div>
+    </div>
+    
+    <div id="clickmepage">
+        <div class="bg-container1">
+            <div class="image-container">
+                <img src="images\pexels-rachel-claire-6752433.jpg" alt="Image1" class="image1"/>
+            <img src="images\pexels-eva-bronzini-6141651.jpg" alt="Image2" class="image2"/>
+            </div>
+            <img src="images\pexels-mister-mister-3434523.jpg" alt="Image3" class="image3"/>
+            <div class="card-container">
+                <p class="para-head">LOREM IPSUM</p>
+                <h1 class="head-title">LOREM IPSUM SET ADMIER</h1>
+                <div class="click-container">
+                    <p class="para-head">Click</p>
+                <button class="arrow"><img src="images\icons8-arrow-30.png" alt="icon" class="iconimage"/></button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
